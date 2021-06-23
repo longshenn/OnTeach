@@ -13,10 +13,10 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener, Ge
 
     lateinit var gDetector: GestureDetector
     var PictureNo:Int = 0  //目前顯示第幾張圖
-    var TotalPictures:Int = 6 //總共幾張圖片(假設僅顯示pu0-pu3)
+    var TotalPictures:Int = 4 //總共幾張圖片(假設僅顯示pu0-pu3)
 
     var StoryTvx:Int = 0
-    var TotalTvx:Int =3
+    var TotalTvx:Int =2
 
     fun ShowPicture(){
         when (PictureNo){
@@ -24,8 +24,6 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener, Ge
             1 -> img.setImageResource(R.drawable.w2)
             2 -> img.setImageResource(R.drawable.w3)
             3 -> img.setImageResource(R.drawable.w4)
-            4 -> img.setImageResource(R.drawable.w5)
-            5 -> img.setImageResource(R.drawable.w6)
         }
     }
 
@@ -65,26 +63,18 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener, Ge
         /*PictureNo = 0
         ShowPicture()*/
         if (PictureNo == 0){
-            txv.text = "短按"
+            txv.text = "北部故事"
         }
         if (PictureNo == 1){
-            txv.text = "因外婆是童養媳，從小就沒被好好對待，以至於長大後也不懂如何待媳婦"
+            txv.text = "中部故事，因外婆是童養媳，從小就沒被好好對待，以至於長大後也不懂如何待媳婦"
         }
 
         if (PictureNo == 2){
-            txv.text = "因此媽媽身上累積了不少外婆的壓力"
+            txv.text = "東部故事，因此媽媽身上累積了不少外婆的壓力"
         }
 
         if (PictureNo == 3){
-            txv.text = "而這些壓力也釋放在我身上"
-        }
-
-        if (PictureNo == 4){
-            txv.text = "只是......"
-        }
-
-        if (PictureNo == 5){
-            txv.text = "我才不是你們的所有物！我是獨立的個體！"
+            txv.text = "南部故事，而這些壓力也釋放在我身上"
         }
         return true
     }
@@ -121,8 +111,6 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener, Ge
         ShowPicture()
         return true
     }
-
-
 
     override fun onSingleTapConfirmed(e: MotionEvent?): Boolean {
         return true
