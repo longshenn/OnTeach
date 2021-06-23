@@ -42,8 +42,6 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
                 startActivity(intent)
             }
         })
-
-
     }
    /* override fun onTouchEvent(event: MotionEvent?): Boolean {
         gDetector.onTouchEvent(event)
@@ -89,27 +87,22 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
         if (PictureNo == 5){
             txv.text = "我才不是你們的所有物！我是獨立的個體！"
         }
-
         return true
     }
 
 
 
     override fun onScroll(
-        e1: MotionEvent, e2: MotionEvent, distanceX: Float, distanceY: Float
-    ): Boolean {
-       // txv.text = "拖曳\nx1y1: " +  e1.getX().toString() + ", " + e1.getY().toString() +
-          //      "\nx2y2: " + e2.getX().toString() + ", " + e2.getY().toString()
+        e1: MotionEvent, e2: MotionEvent, distanceX: Float, distanceY: Float): Boolean {
+        // txv.text = "拖曳\nx1y1: " +  e1.getX().toString() + ", " + e1.getY().toString() +
+        //      "\nx2y2: " + e2.getX().toString() + ", " + e2.getY().toString()
         return true
-
     }
 
     override fun onLongPress(e: MotionEvent?) {
         //txv.text = "長按"
         PictureNo = TotalPictures - 1
         ShowPicture()
-
-
     }
 
     override fun onFling(
@@ -127,9 +120,7 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
             if (PictureNo < 0) {PictureNo = TotalPictures - 1 }
         }
         ShowPicture()
-
         return true
-
     }
 
 
@@ -140,12 +131,10 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
 
     override fun onDoubleTap(e: MotionEvent?): Boolean {
         return true
-
     }
 
     override fun onDoubleTapEvent(e: MotionEvent?): Boolean {
         //txv.text = "連續點兩下"
         return true
-
     }
 }
