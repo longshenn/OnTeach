@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
     var PictureNo:Int = 0  //目前顯示第幾張圖
     var TotalPictures:Int = 6 //總共幾張圖片(假設僅顯示pu0-pu3)
 
+    var StoryTvx:Int = 0
+    var TotalTvx:Int =3
 
     fun ShowPicture(){
         when (PictureNo){
@@ -26,6 +28,18 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
             5 -> img.setImageResource(R.drawable.w6)
         }
     }
+
+   /* fun ShowStory(){
+            when(StoryTvx){
+                0 -> txv.text = "短按"
+                1 -> txv.text = "說故事"
+                2 -> txv.text = "快say"
+                3 -> txv.text = "共"
+            }
+    }*/
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -56,9 +70,36 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
     }
 
     override fun onSingleTapUp(e: MotionEvent?): Boolean {
-        //txv.text = "短按"
+
         /*PictureNo = 0
         ShowPicture()*/
+        if (PictureNo == 0){
+            txv.text = "短按"
+        }
+        if (PictureNo == 1){
+            txv.text = "說故事"
+        }
+
+        if (PictureNo == 2){
+            txv.text = "say story"
+        }
+
+        if (PictureNo == 3){
+            txv.text = "共story"
+        }
+
+        if (PictureNo == 4){
+            txv.text = "say the story"
+        }
+
+        if (PictureNo == 5){
+            txv.text = "say the story for you"
+        }
+
+
+
+
+
 
         return true
 
