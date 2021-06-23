@@ -30,8 +30,6 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
         }
     }
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -67,7 +65,6 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
     }
 
     override fun onSingleTapUp(e: MotionEvent?): Boolean {
-
         /*PictureNo = 0
         ShowPicture()*/
         if (PictureNo == 0){
