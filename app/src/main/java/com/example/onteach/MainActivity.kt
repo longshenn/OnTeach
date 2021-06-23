@@ -13,17 +13,18 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener, Ge
 
     lateinit var gDetector: GestureDetector
     var PictureNo:Int = 0  //目前顯示第幾張圖
-    var TotalPictures:Int = 4 //總共幾張圖片(假設僅顯示pu0-pu3)
+    var TotalPictures:Int = 5 //總共幾張圖片(假設僅顯示pu0-pu3)
 
     var StoryTvx:Int = 0
-    var TotalTvx:Int =2
+    var TotalTvx:Int =3
 
     fun ShowPicture(){
         when (PictureNo){
-            0 -> img.setImageResource(R.drawable.pu0)
-            1 -> img.setImageResource(R.drawable.w2)
-            2 -> img.setImageResource(R.drawable.w3)
-            3 -> img.setImageResource(R.drawable.w4)
+            0 -> img.setImageResource(R.drawable.d0)
+            1 -> img.setImageResource(R.drawable.n1)
+            2 -> img.setImageResource(R.drawable.c2)
+            3 -> img.setImageResource(R.drawable.e3)
+            4 -> img.setImageResource(R.drawable.s4)
         }
     }
 
@@ -62,19 +63,19 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener, Ge
     override fun onSingleTapUp(e: MotionEvent?): Boolean {
         /*PictureNo = 0
         ShowPicture()*/
-        if (PictureNo == 0){
+        PictureNo = (1..4).random()
+        ShowPicture()
+        if (PictureNo == 1){
             txv.text = "北部故事"
         }
-        if (PictureNo == 1){
-            txv.text = "中部故事，因外婆是童養媳，從小就沒被好好對待，以至於長大後也不懂如何待媳婦"
-        }
-
         if (PictureNo == 2){
-            txv.text = "東部故事，因此媽媽身上累積了不少外婆的壓力"
+            txv.text = "中部故事"
         }
-
         if (PictureNo == 3){
-            txv.text = "南部故事，而這些壓力也釋放在我身上"
+            txv.text = "東部故事"
+        }
+        if (PictureNo == 4){
+            txv.text = "南部故事"
         }
         return true
     }

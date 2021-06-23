@@ -21,9 +21,9 @@ class StoryActivity1 : AppCompatActivity() , GestureDetector.OnGestureListener,
 
     fun ShowPicture(){
         when (PictureNo){
-            0 -> img.setImageResource(R.drawable.pu0)
-            1 -> img.setImageResource(R.drawable.pu1)
-            2 -> img.setImageResource(R.drawable.pu2)
+            0 -> img.setImageResource(R.drawable.d0)
+            1 -> img.setImageResource(R.drawable.n1)
+            2 -> img.setImageResource(R.drawable.c2)
 
         }
     }

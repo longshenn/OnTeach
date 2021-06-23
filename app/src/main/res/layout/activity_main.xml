@@ -30,13 +30,14 @@
         android:id="@+id/txv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Formosa Files"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="24sp" />
 
     <ImageView
         android:id="@+id/img"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/pu0" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/d0" />
 
 </LinearLayout>
