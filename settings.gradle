@@ -1,0 +1,2 @@
+rootProject.name = "OnTeach"
+include ':app'
