@@ -9,8 +9,7 @@ import android.view.View
 
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
-    GestureDetector.OnDoubleTapListener, View.OnTouchListener{
+class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener, View.OnTouchListener{
 
     lateinit var gDetector: GestureDetector
     var PictureNo:Int = 0  //目前顯示第幾張圖
