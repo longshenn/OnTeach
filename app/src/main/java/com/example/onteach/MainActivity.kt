@@ -1,5 +1,6 @@
 package com.example.onteach
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.GestureDetector
@@ -29,15 +30,6 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
         }
     }
 
-   /* fun ShowStory(){
-            when(StoryTvx){
-                0 -> txv.text = "短按"
-                1 -> txv.text = "說故事"
-                2 -> txv.text = "快say"
-                3 -> txv.text = "共"
-            }
-    }*/
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,6 +37,13 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
         setContentView(R.layout.activity_main)
         gDetector = GestureDetector(this, this)
         img.setOnTouchListener(this)
+
+        btnM1.setOnClickListener(object :View.OnClickListener{
+            override fun onClick(p0:View?){
+                intent = Intent(this@MainActivity, SelectActivity::class.java)
+                startActivity(intent)
+            }
+        })
 
 
     }
@@ -61,12 +60,10 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
     override fun onDown(e: MotionEvent?): Boolean {
         //txv.text = "按下"
         return true
-
     }
 
     override fun onShowPress(e: MotionEvent?) {
         //txv.text = "按下後無後續動作"
-
     }
 
     override fun onSingleTapUp(e: MotionEvent?): Boolean {
@@ -77,33 +74,29 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
             txv.text = "短按"
         }
         if (PictureNo == 1){
-            txv.text = "說故事"
+            txv.text = "因外婆是童養媳，從小就沒被好好對待，以至於長大後也不懂如何待媳婦"
         }
 
         if (PictureNo == 2){
-            txv.text = "say story"
+            txv.text = "因此媽媽身上累積了不少外婆的壓力"
         }
 
         if (PictureNo == 3){
-            txv.text = "共story"
+            txv.text = "而這些壓力也釋放在我身上"
         }
 
         if (PictureNo == 4){
-            txv.text = "say the story"
+            txv.text = "只是......"
         }
 
         if (PictureNo == 5){
-            txv.text = "say the story for you"
+            txv.text = "我才不是你們的所有物！我是獨立的個體！"
         }
 
-
-
-
-
-
         return true
-
     }
+
+
 
     override fun onScroll(
         e1: MotionEvent, e2: MotionEvent, distanceX: Float, distanceY: Float
@@ -142,6 +135,8 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
 
     }
 
+
+
     override fun onSingleTapConfirmed(e: MotionEvent?): Boolean {
         return true
     }
@@ -156,5 +151,6 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
         return true
 
     }
+
 
 }
