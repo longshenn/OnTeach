@@ -16,7 +16,7 @@ class SelectActivity : AppCompatActivity() {
         btnA1.setOnClickListener(object : View.OnClickListener {
 
             override fun onClick(p0: View?) {
-                intent = Intent(this@SelectActivity, MainActivity::class.java)
+                intent = Intent(this@SelectActivity, StoryActivity1::class.java)
                 startActivity(intent)
             }
         })

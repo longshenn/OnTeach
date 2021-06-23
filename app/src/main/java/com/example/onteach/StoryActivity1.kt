@@ -9,12 +9,12 @@ import android.view.View
 
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
+class StoryActivity1 : AppCompatActivity() , GestureDetector.OnGestureListener,
     GestureDetector.OnDoubleTapListener, View.OnTouchListener{
 
     lateinit var gDetector: GestureDetector
     var PictureNo:Int = 0  //目前顯示第幾張圖
-    var TotalPictures:Int = 6 //總共幾張圖片(假設僅顯示pu0-pu3)
+    var TotalPictures:Int = 3 //總共幾張圖片(假設僅顯示pu0-pu3)
 
     var StoryTvx:Int = 0
     var TotalTvx:Int =3
@@ -22,11 +22,9 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
     fun ShowPicture(){
         when (PictureNo){
             0 -> img.setImageResource(R.drawable.pu0)
-            1 -> img.setImageResource(R.drawable.w2)
-            2 -> img.setImageResource(R.drawable.w3)
-            3 -> img.setImageResource(R.drawable.w4)
-            4 -> img.setImageResource(R.drawable.w5)
-            5 -> img.setImageResource(R.drawable.w6)
+            1 -> img.setImageResource(R.drawable.pu1)
+            2 -> img.setImageResource(R.drawable.pu2)
+
         }
     }
 
@@ -38,24 +36,24 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
         gDetector = GestureDetector(this, this)
         img.setOnTouchListener(this)
 
-        btnM1.setOnClickListener(object :View.OnClickListener{
+        /*btnM1.setOnClickListener(object :View.OnClickListener{
             override fun onClick(p0:View?){
                 intent = Intent(this@MainActivity, SelectActivity::class.java)
                 startActivity(intent)
             }
-        })
+        })*/
 
 
     }
-   /* override fun onTouchEvent(event: MotionEvent?): Boolean {
+    /* override fun onTouchEvent(event: MotionEvent?): Boolean {
+         gDetector.onTouchEvent(event)
+         return true
+
+     }*/
+    override fun onTouch(p0: View?, event: MotionEvent?): Boolean {
         gDetector.onTouchEvent(event)
         return true
-
-    }*/
-   override fun onTouch(p0: View?, event: MotionEvent?): Boolean {
-       gDetector.onTouchEvent(event)
-       return true
-   }
+    }
 
     override fun onDown(e: MotionEvent?): Boolean {
         //txv.text = "按下"
@@ -101,8 +99,8 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
     override fun onScroll(
         e1: MotionEvent, e2: MotionEvent, distanceX: Float, distanceY: Float
     ): Boolean {
-       // txv.text = "拖曳\nx1y1: " +  e1.getX().toString() + ", " + e1.getY().toString() +
-          //      "\nx2y2: " + e2.getX().toString() + ", " + e2.getY().toString()
+        // txv.text = "拖曳\nx1y1: " +  e1.getX().toString() + ", " + e1.getY().toString() +
+        //      "\nx2y2: " + e2.getX().toString() + ", " + e2.getY().toString()
         return true
 
     }
@@ -118,9 +116,9 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
     override fun onFling(
         e1: MotionEvent, e2: MotionEvent, velocityX: Float, velocityY: Float
     ): Boolean {
-       /* txv.text = "快滑\nx1y1: " + e1.getX().toString() + ", " + e1.getY().toString() +
-               "\nx2y2: " + e2.getX().toString() + ", " + e2.getY().toString() +
-               "\nX軸Y軸速度:" + velocityX.toString() + ", " +  velocityY.toString()*/
+        /* txv.text = "快滑\nx1y1: " + e1.getX().toString() + ", " + e1.getY().toString() +
+                "\nx2y2: " + e2.getX().toString() + ", " + e2.getY().toString() +
+                "\nX軸Y軸速度:" + velocityX.toString() + ", " +  velocityY.toString()*/
         if (e1.getX() < e2.getX()){  //向右快滑
             PictureNo--
             if (PictureNo == TotalPictures) {PictureNo = 0}
@@ -151,4 +149,5 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener,
         return true
 
     }
+
 }
