@@ -6,37 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".StoryActivity_101">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img101"
+        android:layout_width="312dp"
+        android:layout_height="439dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/taipei101"
+        tools:layout_editor_absoluteY="-2dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+    <TextView
+        android:id="@+id/txv101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="曾經名列全球第一高樓的台北101大樓最為人所知的就是每年的跨年煙火。但很多人不知道，台北101其實有報時功能，大樓的顏色會隨著週一至週日呈現「紅、橙、黃、綠、藍、靛、紫」，如果你忘了當天是星期幾，抬頭看看台北101就知道了。"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img101" />
 
-            <ImageView
-                android:id="@+id/img101"
-                android:layout_width="match_parent"
-                android:layout_height="439dp"
-                app:srcCompat="@drawable/taipei101" />
-
-            <TextView
-                android:id="@+id/txv101"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="曾經名列全球第一高樓的台北101大樓最為人所知的就是每年的跨年煙火。但很多人不知道，台北101其實有報時功能，大樓的顏色會隨著週一至週日呈現「紅、橙、黃、綠、藍、靛、紫」，如果你忘了當天是星期幾，抬頭看看台北101就知道了。"
-                android:textColor="#333232"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/btn101back"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Back"
-                app:backgroundTint="@color/black"
-                app:rippleColor="@color/design_default_color_error" />
-        </LinearLayout>
-    </ScrollView>
-
+    <Button
+        android:id="@+id/btn101back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Back"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/design_default_color_error" />
 </androidx.constraintlayout.widget.ConstraintLayout>

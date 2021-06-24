@@ -20,10 +20,10 @@ class Start : AppCompatActivity() , GestureDetector.OnGestureListener, GestureDe
 
     fun ShowPicture(){
         when (PictureNo){
-            1 -> img.setImageResource(R.drawable.n11)
-            2 -> img.setImageResource(R.drawable.c21)
-            3 -> img.setImageResource(R.drawable.e3)
-            4 -> img.setImageResource(R.drawable.s4)
+            1 -> img.setImageResource(R.drawable.north)
+            2 -> img.setImageResource(R.drawable.center)
+            3 -> img.setImageResource(R.drawable.east)
+            4 -> img.setImageResource(R.drawable.south)
         }
     }
 
