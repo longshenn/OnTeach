@@ -14,18 +14,18 @@ class SelectAE : AppCompatActivity() {
 
         btnB3R.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
-                tt.text = "正確！"
+                tt3.text = "正確！"
                 intent = Intent(this@SelectAE, StoryAE::class.java)
                 startActivity(intent)
             }
         })
         btnB3L.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
-                tt.text = "答錯 請返回上一頁"
-                btnB1.isEnabled = false
+                tt3.text = "答錯 請返回上一頁"
+                btnB3R.isEnabled = false
             }
         })
-        re.setOnClickListener(object : View.OnClickListener {
+        re3.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
                 intent = Intent(this@SelectAE, Start::class.java)
                 startActivity(intent)

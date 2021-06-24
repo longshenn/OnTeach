@@ -6,4 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".StoryAE">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgse"
+                android:layout_width="match_parent"
+                android:layout_height="367dp"
+                android:src="@drawable/c22" />
+
+            <TextView
+                android:id="@+id/acse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="鯉魚精有兩隻，一公一母、來自於太平洋，牠們只要遇到陽光便會幻化成石頭動彈不得，直到太陽下山才會變回來。牠們可以讓人生出雙胞胎（過去社會中雙胞胎被視為惡兆）。"
+                android:textColor="#333232"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/acse2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="鯉魚精與山貓精的故事有多種版本，在此只提及其中一種版本。"
+                android:textColor="#333232"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/acse3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="過去這對鯉魚精經常在太陽下山後上岸來騷擾當地居民，而當地也住著一隻保護居民的山貓精，只要鯉魚精上岸便會追捕牠們，但一直被靈活的鯉魚精逃脫，直到有一天，在公鯉魚回到海裡後，母鯉魚卻因為來不及進入海中太陽便升起了，使讓牠和山貓精一起變成石頭，而剛好有一艘西班牙（一說荷蘭）的船隻經過，發現經過的「山」上有兩顆大寶石，便把它們挖出來帶走，但那兩顆寶石其實是母鯉魚的眼睛，失去眼睛的母鯉魚失去靈氣，再也無法變回原形，而山貓精看著自己的獵物沒有動靜，也因為貓的狩獵本能而保持不動，兩隻怪物分別變成鯉魚山和貓山。"
+                android:textColor="#333232"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/rese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Back"
+                app:backgroundTint="@color/black"
+                app:rippleColor="@color/design_default_color_error" />
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
