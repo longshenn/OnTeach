@@ -6,4 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".StoryAS">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgas"
+                android:layout_width="match_parent"
+                android:layout_height="424dp"
+                app:srcCompat="@drawable/e32" />
+
+            <TextView
+                android:id="@+id/acss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="1996年11月30日，擔任民進黨婦女部主任的彭婉如，搭飛機南下高雄為即將進行表決的民進黨「婦女參政四分之一保障條款」徹夜奔走，在當天晚間於路邊招手、上車後離開高雄市尖美大飯店，準備回到下榻的圓山飯店後就因此失蹤，而當時目送她上計程車的國大代表唐碧娥，成為最後一個目擊者。隔日，由於民進黨全代會開始半小時後，彭婉如仍未出現，因此黨員迅速聯絡黨部並報案。"
+                android:textColor="#333232"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/acss2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="經過漫長且艱難地調查後，終於查出嫌疑犯，不幸的是嫌疑犯似乎早已自撞身亡。成為了懸案。當時對兇手的懸賞金高達新台幣2200萬元，是台灣史上第三高。彭婉如命案引發社會的強烈震撼，婦女人身安全也成為社會大眾關注的焦點。"
+                android:textColor="#333232"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/acss3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="PS：網路上臆測頗多，但從未有任何正式的聲明原因，故此題答案為不明！"
+                android:textColor="#333232"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/ress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Back"
+                app:backgroundTint="@color/black"
+                app:rippleColor="@color/design_default_color_error" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
