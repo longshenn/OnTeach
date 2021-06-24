@@ -18,6 +18,11 @@ class SelectAC : AppCompatActivity() {
                 startActivity(intent)
             }
         })
+        btnA2.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+                tt.text = "答錯 請返回上一頁"
+            }
+        })
         re.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
                 intent = Intent(this@SelectAC, Start::class.java)

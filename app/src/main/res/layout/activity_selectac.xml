@@ -8,21 +8,21 @@
 
     <ImageView
         android:id="@+id/imgS1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="407dp"
+        android:layout_height="309dp"
         app:layout_constraintBottom_toTopOf="@+id/btnA1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/d0" />
+        app:srcCompat="@drawable/c23" />
 
     <TextView
         android:id="@+id/tt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="請問這張圖看起來像什麼"
+        android:text="此事件發生在？"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,10 +36,12 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="104dp"
-        android:text="他是殺人犯"
+        android:text="衛爾康餐廳"
+        app:backgroundTint="#47000D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tt" />
+        app:layout_constraintTop_toBottomOf="@+id/tt"
+        app:rippleColor="@android:color/holo_red_dark" />
 
     <Button
         android:id="@+id/btnA2"
@@ -48,10 +50,12 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="104dp"
-        android:text="他是大妖怪"
+        android:text="金福華餐廳"
+        app:backgroundTint="#47000D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tt" />
+        app:layout_constraintTop_toBottomOf="@+id/tt"
+        app:rippleColor="@android:color/holo_red_dark" />
 
     <Button
         android:id="@+id/re"

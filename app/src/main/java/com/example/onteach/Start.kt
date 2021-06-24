@@ -36,8 +36,10 @@ class Start : AppCompatActivity() , GestureDetector.OnGestureListener, GestureDe
 
         btnM1.setOnClickListener(object :View.OnClickListener{
             override fun onClick(p0:View?){
-                intent = Intent(this@Start, SelectAC::class.java)
-                startActivity(intent)
+                if (PictureNo == 2){
+                    intent = Intent(this@Start, SelectAC::class.java)
+                    startActivity(intent)
+                }
             }
         })
     }
