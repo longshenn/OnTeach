@@ -8,7 +8,7 @@ import android.view.View
 
 import kotlinx.android.synthetic.main.activity_start.*
 
-class StoryActivity1 : AppCompatActivity() , GestureDetector.OnGestureListener,
+class StoryAC : AppCompatActivity() , GestureDetector.OnGestureListener,
     GestureDetector.OnDoubleTapListener, View.OnTouchListener{
 
     lateinit var gDetector: GestureDetector
