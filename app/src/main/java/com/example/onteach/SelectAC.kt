@@ -14,6 +14,7 @@ class SelectAC : AppCompatActivity() {
 
         btnA1.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
+                tt.text = "正確！"
                 intent = Intent(this@SelectAC, StoryAC::class.java)
                 startActivity(intent)
             }
