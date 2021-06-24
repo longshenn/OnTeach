@@ -14,15 +14,15 @@ class SelectAS : AppCompatActivity() {
 
         btnB4R.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
-                tt3.text = "正確！"
+                tt4.text = "正確！"
                 intent = Intent(this@SelectAS, StoryAS::class.java)
                 startActivity(intent)
             }
         })
         btnB4L.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
-                tt3.text = "答錯 請返回上一頁"
-                btnB3R.isEnabled = false
+                tt4.text = "答錯 請返回上一頁"
+                btnB4R.isEnabled = false
             }
         })
         re4.setOnClickListener(object : View.OnClickListener {
