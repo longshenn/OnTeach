@@ -47,6 +47,10 @@ class Start : AppCompatActivity() , GestureDetector.OnGestureListener, GestureDe
                     intent = Intent(this@Start, SelectAE::class.java)
                     startActivity(intent)
                 }
+                if(PictureNo == 4){
+                    intent = Intent(this@Start, SelectAS::class.java)
+                    startActivity(intent)
+                }
             }
         })
     }
@@ -84,7 +88,7 @@ class Start : AppCompatActivity() , GestureDetector.OnGestureListener, GestureDe
             txv.text = "鯉魚精與山貓精"
         }
         if (PictureNo == 4){
-            txv.text = "南部故事"
+            txv.text = "彭婉如命案"
         }
         return true
     }
