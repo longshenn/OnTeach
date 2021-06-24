@@ -4,23 +4,23 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import kotlinx.android.synthetic.main.activity_select.*
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_selectac.*
+import kotlinx.android.synthetic.main.activity_start.*
 
-class SelectActivity : AppCompatActivity() {
+class SelectAC : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_select)
+        setContentView(R.layout.activity_selectac)
 
         btnA1.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
-                intent = Intent(this@SelectActivity, StoryActivity1::class.java)
+                intent = Intent(this@SelectAC, StoryActivity1::class.java)
                 startActivity(intent)
             }
         })
         re.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
-                intent = Intent(this@SelectActivity, MainActivity::class.java)
+                intent = Intent(this@SelectAC, Start::class.java)
                 startActivity(intent)
             }
         })

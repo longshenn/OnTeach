@@ -1,13 +1,12 @@
 package com.example.onteach
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.View
 
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_start.*
 
 class StoryActivity1 : AppCompatActivity() , GestureDetector.OnGestureListener,
     GestureDetector.OnDoubleTapListener, View.OnTouchListener{
@@ -23,7 +22,7 @@ class StoryActivity1 : AppCompatActivity() , GestureDetector.OnGestureListener,
         when (PictureNo){
             0 -> img.setImageResource(R.drawable.d0)
             1 -> img.setImageResource(R.drawable.n1)
-            2 -> img.setImageResource(R.drawable.c2)
+            2 -> img.setImageResource(R.drawable.c21)
 
         }
     }
@@ -32,7 +31,7 @@ class StoryActivity1 : AppCompatActivity() , GestureDetector.OnGestureListener,
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_start)
         gDetector = GestureDetector(this, this)
         img.setOnTouchListener(this)
 

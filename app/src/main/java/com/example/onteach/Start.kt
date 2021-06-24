@@ -7,9 +7,9 @@ import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.View
 
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_start.*
 
-class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener, View.OnTouchListener{
+class Start : AppCompatActivity() , GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener, View.OnTouchListener{
 
     lateinit var gDetector: GestureDetector
     var PictureNo:Int = 0  //目前顯示第幾張圖
@@ -30,13 +30,13 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener, Ge
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_start)
         gDetector = GestureDetector(this, this)
         img.setOnTouchListener(this)
 
         btnM1.setOnClickListener(object :View.OnClickListener{
             override fun onClick(p0:View?){
-                intent = Intent(this@MainActivity, SelectActivity::class.java)
+                intent = Intent(this@Start, SelectAC::class.java)
                 startActivity(intent)
             }
         })
