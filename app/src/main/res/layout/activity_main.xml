@@ -30,8 +30,10 @@
         android:id="@+id/txv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Formosa Files"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="At the beginning of the story..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#6E0606"
+        android:textColorHint="#000000"
         android:textSize="24sp"
         android:visibility="visible"
         tools:visibility="visible" />
