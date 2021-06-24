@@ -5,17 +5,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_selectac.*
-import kotlinx.android.synthetic.main.activity_start.*
 
-class SelectAC : AppCompatActivity() {
+class SelectActivity_101 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_selectac)
+        setContentView(R.layout.activity_select101)
 
         btnB1.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
                 tt.text = "正確！"
-                intent = Intent(this@SelectAC, StoryAC::class.java)
+                intent = Intent(this@SelectActivity_101, StoryActivity_101::class.java)
                 startActivity(intent)
             }
         })
@@ -26,7 +25,7 @@ class SelectAC : AppCompatActivity() {
         })
         re.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
-                intent = Intent(this@SelectAC, Start::class.java)
+                intent = Intent(this@SelectActivity_101, Start::class.java)
                 startActivity(intent)
             }
         })

@@ -4,57 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SelectAC">
+    tools:context=".SelectActivity_101">
 
     <ImageView
-        android:id="@+id/imgS1"
-        android:layout_width="407dp"
-        android:layout_height="309dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnB1"
+        android:id="@+id/img101"
+        android:layout_width="287dp"
+        android:layout_height="332dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/c23" />
+        app:srcCompat="@drawable/taipei101"
+        tools:layout_editor_absoluteY="30dp" />
 
     <TextView
         android:id="@+id/tt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="此事件發生在？"
+        android:layout_marginTop="28dp"
+        android:text="台北101除了放煙火，還能？"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgS1" />
+        app:layout_constraintTop_toBottomOf="@+id/img101" />
 
     <Button
         android:id="@+id/btnB1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="104dp"
-        android:text="衛爾康餐廳"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:text="報時"
         app:backgroundTint="#47000D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tt"
+        app:layout_constraintVertical_bias="0.136"
         app:rippleColor="@android:color/holo_red_dark" />
 
     <Button
         android:id="@+id/btnB2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="60dp"
-        android:layout_marginBottom="104dp"
-        android:text="金福華餐廳"
+        android:text="報氣溫"
         app:backgroundTint="#47000D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tt"
+        app:layout_constraintVertical_bias="0.24"
         app:rippleColor="@android:color/holo_red_dark" />
 
     <Button
@@ -66,7 +65,8 @@
         app:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:rippleColor="@color/design_default_color_error" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

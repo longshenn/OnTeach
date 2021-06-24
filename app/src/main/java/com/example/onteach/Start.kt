@@ -40,6 +40,11 @@ class Start : AppCompatActivity() , GestureDetector.OnGestureListener, GestureDe
                     intent = Intent(this@Start, SelectAC::class.java)
                     startActivity(intent)
                 }
+
+                if(PictureNo == 1){
+                    intent = Intent(this@Start, SelectActivity_101::class.java)
+                    startActivity(intent)
+                }
             }
         })
     }
