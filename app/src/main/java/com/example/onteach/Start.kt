@@ -43,6 +43,10 @@ class Start : AppCompatActivity() , GestureDetector.OnGestureListener, GestureDe
                     intent = Intent(this@Start, SelectAC::class.java)
                     startActivity(intent)
                 }
+                if(PictureNo == 3){
+                    intent = Intent(this@Start, SelectAE::class.java)
+                    startActivity(intent)
+                }
             }
         })
     }
