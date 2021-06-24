@@ -44,6 +44,6 @@
         android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/n1" />
+        app:srcCompat="@drawable/map_draw" />
 
 </LinearLayout>
