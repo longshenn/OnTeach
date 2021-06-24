@@ -10,7 +10,7 @@
         android:id="@+id/imgS3"
         android:layout_width="407dp"
         android:layout_height="309dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnB"
+        app:layout_constraintBottom_toTopOf="@+id/btnB3L"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,19 +22,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="TextView"
+        android:text="鯉魚山別名？"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgS3" />
 
     <Button
-        android:id="@+id/btnB"
+        android:id="@+id/btnB3L"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="104dp"
-        android:text="衛爾康餐廳"
+        android:text="阿美山"
         app:backgroundTint="#47000D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,13 +44,13 @@
         app:rippleColor="@android:color/holo_red_dark" />
 
     <Button
-        android:id="@+id/btnB3"
+        android:id="@+id/btnB3R"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="104dp"
-        android:text="金福華餐廳"
+        android:text="卑南山"
         app:backgroundTint="#47000D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,7 +58,7 @@
         app:rippleColor="@android:color/holo_red_dark" />
 
     <Button
-        android:id="@+id/re2"
+        android:id="@+id/re3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"

@@ -81,7 +81,7 @@ class Start : AppCompatActivity() , GestureDetector.OnGestureListener, GestureDe
             txv.text = "幽靈船"
         }
         if (PictureNo == 3){
-            txv.text = "東部故事"
+            txv.text = "鯉魚精與山貓精"
         }
         if (PictureNo == 4){
             txv.text = "南部故事"
