@@ -8,7 +8,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.OnTeach">
-        <activity android:name=".StoryAE"></activity>
+        <activity android:name=".StoryAS"></activity>
+        <activity android:name=".SelectAS" />
+        <activity android:name=".StoryAE" />
         <activity android:name=".SelectAE" />
         <activity android:name=".SelectAN" />
         <activity android:name=".StoryAC" />
