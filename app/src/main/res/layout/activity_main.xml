@@ -15,8 +15,8 @@
             android:id="@+id/btnM1"
             android:layout_width="97dp"
             android:layout_height="42dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
             android:text="Next"
             app:backgroundTint="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -32,12 +32,16 @@
         android:layout_height="wrap_content"
         android:text="Formosa Files"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:visibility="visible"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/img"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/d0" />
 
 </LinearLayout>

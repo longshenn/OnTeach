@@ -91,17 +91,16 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener, Ge
 
     override fun onLongPress(e: MotionEvent?) {
         //txv.text = "長按"
-        PictureNo = TotalPictures - 1
-        ShowPicture()
+        //PictureNo = TotalPictures - 1
+        //ShowPicture()
     }
 
     override fun onFling(
-        e1: MotionEvent, e2: MotionEvent, velocityX: Float, velocityY: Float
-    ): Boolean {
+        e1: MotionEvent, e2: MotionEvent, velocityX: Float, velocityY: Float): Boolean {
        /* txv.text = "快滑\nx1y1: " + e1.getX().toString() + ", " + e1.getY().toString() +
                "\nx2y2: " + e2.getX().toString() + ", " + e2.getY().toString() +
                "\nX軸Y軸速度:" + velocityX.toString() + ", " +  velocityY.toString()*/
-        if (e1.getX() < e2.getX()){  //向右快滑
+        /*if (e1.getX() < e2.getX()){  //向右快滑
             PictureNo--
             if (PictureNo == TotalPictures) {PictureNo = 0}
         }
@@ -109,7 +108,7 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener, Ge
             PictureNo++;
             if (PictureNo < 0) {PictureNo = TotalPictures - 1 }
         }
-        ShowPicture()
+        ShowPicture()*/
         return true
     }
 
