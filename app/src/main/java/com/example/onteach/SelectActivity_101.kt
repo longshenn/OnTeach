@@ -21,6 +21,7 @@ class SelectActivity_101 : AppCompatActivity() {
         btnB2.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
                 tt.text = "答錯 請返回上一頁"
+                btnB1.isEnabled = false
             }
         })
         re.setOnClickListener(object : View.OnClickListener {

@@ -20,8 +20,7 @@ class Start : AppCompatActivity() , GestureDetector.OnGestureListener, GestureDe
 
     fun ShowPicture(){
         when (PictureNo){
-            0 -> img.setImageResource(R.drawable.d0)
-            1 -> img.setImageResource(R.drawable.n1)
+            1 -> img.setImageResource(R.drawable.n11)
             2 -> img.setImageResource(R.drawable.c21)
             3 -> img.setImageResource(R.drawable.e3)
             4 -> img.setImageResource(R.drawable.s4)
@@ -36,13 +35,12 @@ class Start : AppCompatActivity() , GestureDetector.OnGestureListener, GestureDe
 
         btnM1.setOnClickListener(object :View.OnClickListener{
             override fun onClick(p0:View?){
-                if (PictureNo == 2){
-                    intent = Intent(this@Start, SelectAC::class.java)
-                    startActivity(intent)
-                }
-
                 if(PictureNo == 1){
                     intent = Intent(this@Start, SelectActivity_101::class.java)
+                    startActivity(intent)
+                }
+                if (PictureNo == 2){
+                    intent = Intent(this@Start, SelectAC::class.java)
                     startActivity(intent)
                 }
             }
@@ -73,10 +71,10 @@ class Start : AppCompatActivity() , GestureDetector.OnGestureListener, GestureDe
         PictureNo = (1..4).random()
         ShowPicture()
         if (PictureNo == 1){
-            txv.text = "北部故事"
+            txv.text = "101"
         }
         if (PictureNo == 2){
-            txv.text = "台中 幽靈船事件"
+            txv.text = "幽靈船"
         }
         if (PictureNo == 3){
             txv.text = "東部故事"
