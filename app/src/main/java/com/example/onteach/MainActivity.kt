@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener, Ge
         when (PictureNo){
             0 -> img.setImageResource(R.drawable.d0)
             1 -> img.setImageResource(R.drawable.n1)
-            2 -> img.setImageResource(R.drawable.c2)
+            2 -> img.setImageResource(R.drawable.c21)
             3 -> img.setImageResource(R.drawable.e3)
             4 -> img.setImageResource(R.drawable.s4)
         }
@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() , GestureDetector.OnGestureListener, Ge
             txv.text = "北部故事"
         }
         if (PictureNo == 2){
-            txv.text = "中部故事"
+            txv.text = "台中 幽靈船事件"
         }
         if (PictureNo == 3){
             txv.text = "東部故事"

@@ -12,10 +12,15 @@ class SelectActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_select)
 
-
         btnA1.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
                 intent = Intent(this@SelectActivity, StoryActivity1::class.java)
+                startActivity(intent)
+            }
+        })
+        re.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+                intent = Intent(this@SelectActivity, MainActivity::class.java)
                 startActivity(intent)
             }
         })
