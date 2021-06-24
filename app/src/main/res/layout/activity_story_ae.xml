@@ -16,10 +16,10 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imgse"
+                android:id="@+id/imgae"
                 android:layout_width="match_parent"
-                android:layout_height="367dp"
-                android:src="@drawable/c22" />
+                android:layout_height="424dp"
+                app:srcCompat="@drawable/e32" />
 
             <TextView
                 android:id="@+id/acse"
